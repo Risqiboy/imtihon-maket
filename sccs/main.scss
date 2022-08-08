@@ -1,0 +1,1155 @@
+@import "./block/general";
+@import "./block/container";
+@import "./block/header";
+@import "./block/fonts.scss";
+@import "./block/body.scss";
+@import "./block/footer.scss";
+
+// birinchi page boshlandi//
+.main_box {
+    width: 1440px;
+    height: 650px;
+    background-size: cover;
+    background-image: url(../image/Bitmap.png);
+
+    .box__title h2 {
+        width: 500px;
+        height: 112px;
+        margin-top: 115px;
+        margin-left: 165px;
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 56px;
+        letter-spacing: -2.5px;
+        color: #FFFFFF;
+    }
+
+    img {
+        position: relative;
+        top: 100px;
+    }
+
+    .box_text p {
+        width: 405px;
+        height: 100px;
+        margin-top: 40px;
+        margin-left: 260px;
+        font-family: 'Lexend Deca';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 25px;
+        color: #FFFFFF;
+    }
+
+    .box_img {
+        position: relative;
+        top: -70px;
+        left: 692px;
+    }
+
+    .box_btn {
+        width: 180px;
+        height: 53px;
+        background: #FCB72B;
+        color: #ffff;
+        border: none;
+        position: relative;
+        right: 200px;
+        top: -60px;
+
+        &:hover {
+            background: #ffff;
+            color: #FCB72B;
+
+        }
+    }
+
+
+}
+
+.cards__path2 {
+    width: 974px;
+    height: 1px;
+    border: 15px solid #E5ECF4;
+    margin-top: 208px;
+}
+
+.cards {
+    width: 1271px;
+    height: 291px;
+    position: relative;
+    bottom: 60px;
+    left: 80px;
+    display: flex;
+    justify-content: space-around;
+
+    .card h3 {
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: -1.07143px;
+        color: #495567;
+    }
+
+    .card p {
+        width: 350px;
+        font-family: 'Lexend Deca';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        color: #939CAA;
+    }
+
+}
+
+.box_next {
+    width: 1440px;
+    height: 450px;
+    display: flex;
+    justify-content: space-around;
+
+    .box_card__title {
+        width: 445px;
+        height: 313px;
+        margin-top: 100px;
+
+
+        h4 {
+
+            font-family: 'Space Mono';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 48px;
+            letter-spacing: -2.14286px;
+            color: #495567;
+        }
+
+        p {
+
+            margin-top: 24px;
+            font-family: 'Lexend Deca';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            color: #939CAA;
+        }
+
+        .box_card_img {
+            margin-top: 40px;
+        }
+
+        .box_card_btn {
+            width: 180px;
+            height: 53px;
+            background: #FCB72B;
+            color: #ffff;
+            border: none;
+
+            &:hover {
+                background: #ffff;
+                color: #FCB72B;
+                border: 1px solid #FCB72B;
+            }
+        }
+    }
+
+
+
+}
+
+.box_next:nth-child(2) {
+    margin-top: 100px;
+
+}
+
+.box_next:nth-child(3)img {
+    border-radius: 50%;
+    margin-top: 100px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+@media only screen and (max-width:768px) {
+    .main_box {
+        width: 768px;
+        height: 650px;
+        background-image: url(../image/tablet/Bitmap.jpg);
+        background-size: cover;
+
+    }
+
+    h2 {
+        width: 573px;
+        padding-top: 137px;
+        font-size: 56px;
+        line-height: 56px;
+
+    }
+
+    .box_text p {
+        position: relative;
+        right: 70px;
+        text-align: center;
+        padding-top: 98px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 25px;
+
+
+    }
+
+    .box_btn {
+        margin-top: 170px;
+        margin-left: 500px;
+    }
+
+    .box_text {
+        width: 700px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box_text img {
+        display: none;
+
+    }
+
+    .cards__path2 {
+        width: 0;
+        height: 590px;
+        margin-top: -1px;
+        margin-left: 130px;
+
+    }
+
+    .cards {
+        width: 750px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin-top: -300px;
+    }
+
+    .card {
+        width: 824px;
+        display: flex;
+        justify-content: flex-start;
+
+
+    }
+
+    .card h3 {
+        width: 398px;
+        height: 28px;
+        position: relative;
+        left: 50px;
+        bottom: 120px;
+    }
+
+    .card p {
+        width: 622px;
+        display: flex;
+        justify-content: flex-start;
+        position: relative;
+        top: 10px;
+        right: 300px;
+    }
+
+    .card img {
+        margin-bottom: 100px;
+    }
+
+    .section_box_next {
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .box_next {
+        display: flex;
+        flex-direction: column;
+        margin-top: 150px;
+    }
+
+    .box_card__title {
+        order: 1;
+    }
+
+    .box_card_img {
+        margin-top: 190px;
+        margin-left: 164px;
+    }
+
+    .box_next:nth-child(2) {
+        .box_card_img {
+            margin-top: 550px;
+        }
+    }
+
+    .box_next:nth-child(3) {
+        .box_card_img {
+            margin-top: 700px;
+        }
+    }
+
+    .box_card__title {
+        order: 1;
+        position: relative;
+        bottom: 100px;
+        margin-left: 164px;
+
+    }
+
+    .box_card__title {
+        margin-top: -20px;
+        text-align: center;
+    }
+
+    .box_card__title p {
+        text-align: center;
+    }
+
+    .box_card_btn {
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .main_box {
+        width: 768px;
+        height: auto;
+        background-image: url(../image/Bitmap\ \(7\).png);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+
+
+
+        .box__title h2 {
+            width: 311px;
+            position: relative;
+            left: 100px;
+            font-family: 'Space Mono';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 40px;
+            text-align: center;
+            letter-spacing: -1.78571px;
+
+
+        }
+
+        .box__title p {
+
+            width: 311px;
+            font-family: 'Lexend Deca';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+
+        }
+    }
+
+    .cards__path2 {
+        display: none;
+    }
+
+    .cards {
+        margin-top: 500px;
+
+    }
+
+    .card {
+        width: 56px;
+        display: flex;
+        flex-direction: column;
+
+        img {
+            position: relative;
+            left: 200px;
+            margin-bottom: 40px;
+        }
+
+        p {
+            position: relative;
+            top: -100px;
+            margin-left: 400px;
+        }
+    }
+
+    .box_card_img {
+        width: 311px;
+    }
+
+    .section_box_next {
+        margin-top: 200px;
+
+        .box_next {
+            margin-right: 200px;
+
+            .box_card__title {
+                width: 448px;
+                margin-right: 900px;
+
+                h2 {
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 32px;
+                }
+
+            }
+        }
+    }
+}
+
+// biribchi page tugadi
+
+
+// ikkinchi page boshlandi
+
+.about__card {
+    width: 100%px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-size: cover;
+    background-image: url(../image/Bitmap\ \(2\).png);
+
+
+    h1 {
+        margin-left: 165px;
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 56px;
+        letter-spacing: -2.5px;
+        color: #FFFFFF;
+        text-align: center;
+
+    }
+
+    .about__card_img {
+        width: 234px;
+        height: 63px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+}
+
+.about_box {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: space-around;
+
+    .about_box_title {
+        width: 445px;
+        height: 313px;
+        margin-top: 245px;
+
+        h4 {
+            width: 445px;
+            height: 96px;
+            font-family: 'Space Mono';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 48px;
+            letter-spacing: -2.14286px;
+            color: #495567;
+        }
+
+        p {
+            width: 445px;
+            height: 100px;
+            margin-top: 24px;
+            font-family: 'Lexend Deca';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            color: #939CAA;
+        }
+
+    }
+
+    .about_box_img {
+        width: 445px;
+
+        margin-top: 120px;
+
+        img {
+            border-radius: 50%;
+        }
+    }
+}
+
+.about_box {
+    margin-top: 245px;
+}
+
+h2 {
+    margin-top: 240px;
+    text-align: center;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: -2.14286px;
+    color: #495567;
+}
+
+.about_box_next {
+    width: 1110px;
+    height: 608px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+
+    .about_box_next-card {
+        width: 350px;
+        height: 512px;
+        margin-top: 48px;
+        text-align: center;
+
+        h3 {
+            margin-top: 32px;
+            font-family: 'Space Mono';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            text-align: center;
+            letter-spacing: -1.07143px;
+            color: #495567;
+        }
+
+        p {
+            margin-top: 27px;
+            font-family: 'Lexend Deca';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+            color: #939CAA;
+
+        }
+    }
+}
+
+h3 {
+    margin-top: 100px;
+    text-align: center;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    /* identical to box height, or 100% */
+
+    text-align: center;
+    letter-spacing: -2.14286px;
+
+    color: #495567;
+
+}
+
+.accordion_card {
+    width: 1110px;
+    height: 407px;
+    display: flex;
+    justify-content: space-around;
+
+    .accordion_box {
+        width: 730px;
+        margin-top: 128px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+
+
+    .abou_container {
+        flex-direction: column;
+    }
+
+    .about_box {
+        display: flex;
+        flex-direction: column;
+        margin-top: 500px;
+        margin-left: 150px;
+
+        h4 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .about_box_title {
+            width: 573px;
+            order: 1;
+        }
+    }
+
+    h2 {
+        margin-left: 70px;
+    }
+
+    .about_box_next {
+        display: flex;
+        flex-direction: column;
+        margin-top: 550px;
+        margin-left: 200px;
+    }
+
+    h3 {
+        margin-top: 700px;
+    }
+
+    .accordion_card {
+        flex-direction: column;
+        position: relative;
+        bottom: 200px;
+
+        .accordion_card_title {
+            position: relative;
+            right: 200px;
+            top: 100px;
+        }
+    }
+
+
+
+
+}
+
+@media only screen and (max-width:576px) {
+
+    .about__card {
+        h1 {
+            position: relative;
+            right: 50px;
+
+        }
+
+        .about__card img {
+            display: none;
+        }
+    }
+
+    .abou_container {
+        flex-direction: column;
+
+    }
+
+    .about_box {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        right: 120px;
+
+        img {
+            width: 311px;
+            height: 311px;
+        }
+
+
+        .about_box_title {
+            order: 1;
+
+            h4 {
+                position: relative;
+                right: 70px;
+                font-size: 34px;
+            }
+
+            p {
+                width: 311px;
+                height: 100px;
+                position: relative;
+                right: 20px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15;
+                line-height: 25px;
+                text-align: center;
+            }
+        }
+    }
+
+    h2 {
+        position: relative;
+        right: 180px;
+    }
+
+    .about_box_next {
+        display: flex;
+        flex-direction: column;
+
+        .about_box_next-card {
+            position: relative;
+            right: 200px;
+        }
+    }
+
+    .Faqs {
+        position: relative;
+        top: 200px;
+    }
+
+    .accordion_card {
+        width: 311px;
+        flex-direction: column;
+        position: relative;
+        bottom: 200px;
+
+        .accordion_card_title {
+            position: relative;
+            left: 30px;
+            margin-top: 200px;
+
+            .how {
+                font-size: 24px;
+                line-height: 28px;
+            }
+        }
+
+        .accordion_box {
+            width: 311px;
+        }
+    }
+}
+
+// ikkinchi page tugadi//
+
+
+
+
+
+// uchinchi page-boshlandi//
+.careers__card {
+    width: 100%;
+    height: 300px;
+    background-image: url(../image/Bitmap\ \(2\).png);
+    background-size: cover;
+
+    h1 {
+        margin-left: 165px;
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 56px;
+        letter-spacing: -2.5px;
+        color: #FFFFFF;
+        text-align: center;
+
+    }
+}
+
+.careers_box_card_img img {
+    margin-top: 20px;
+    border-radius: 50%;
+
+}
+
+.careers_box {
+    width: 1110px;
+    height: 840px;
+    margin: 0 auto;
+    margin-top: 120px;
+
+
+    .careers_box_item {
+        width: 1110px;
+        height: 128px;
+        background: #F2F5F9;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        h6 {
+            margin-left: 40px;
+            font-family: 'Space Mono';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: -1.07143px;
+            color: #495567;
+        }
+
+        p {
+            margin-left: 40px;
+            font-family: 'Lexend Deca';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            color: #495567;
+        }
+
+        .careers__btn {
+            width: 180px;
+            height: 53px;
+            margin-right: 60px;
+            background: #FCB72B;
+            color: #ffff;
+            border: none;
+        }
+
+        &:nth-child(2) {
+            margin-top: 50px;
+        }
+
+        &:nth-child(3) {
+            margin-top: 50px;
+        }
+
+        &:nth-child(4) {
+            margin-top: 50px;
+        }
+
+        &:nth-child(5) {
+            margin-top: 50px;
+        }
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .about__card {
+        width: 768px;
+
+    }
+
+    .box_card__title {
+
+        h4 {
+            margin-top: 100px;
+        }
+
+    }
+
+    .careers_box_card_img {
+        margin-left: 150px;
+        margin-top: 150px;
+    }
+
+    .abou_container {
+        flex-direction: column;
+    }
+
+    .about_box {
+        display: flex;
+        flex-direction: column;
+        margin-top: 500px;
+        margin-left: 150px;
+
+        h4 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .about_box_title {
+            width: 573px;
+            order: 1;
+        }
+    }
+
+    h2 {
+        margin-left: 70px;
+    }
+
+    .about_box_next {
+        display: flex;
+        flex-direction: column;
+        margin-top: 550px;
+        margin-left: 200px;
+    }
+
+    h3 {
+        margin-top: 700px;
+    }
+
+    .careers_box {
+        width: 689px;
+
+        .careers_box_item {
+            width: 689px;
+
+        }
+
+        transform: translateY(500px);
+        -webkit-transform: translateY(500px);
+        -moz-transform: translateY(500px);
+        -ms-transform: translateY(500px);
+        -o-transform: translateY(500px);
+    }
+
+
+
+
+
+
+}
+
+@media only screen and (max-width:576px) {
+    .about__card {
+        width: 576px;
+
+    }
+
+    .box_card__title {
+        width: 311px;
+        position: relative;
+        right: 105px;
+
+        h4 {
+            margin-top: 200px;
+        }
+
+    }
+
+    h2 {
+        margin-left: 190px;
+    }
+
+    .careers_box_card_img {
+        width: 311px;
+        height: 311px;
+        margin-left: 50px;
+        margin-top: 150px;
+    }
+
+    .abou_container {
+        flex-direction: column;
+    }
+
+    .about_box {
+        display: flex;
+        flex-direction: column;
+        margin-top: 500px;
+        margin-left: 150px;
+
+        h4 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .about_box_title {
+            width: 573px;
+            order: 1;
+        }
+    }
+
+
+
+    .about_box_next {
+        display: flex;
+        flex-direction: column;
+        margin-top: 550px;
+        margin-left: 300px;
+    }
+
+    h3 {
+        margin-top: 700px;
+    }
+
+    .careers_box {
+
+
+        .careers_box_item {
+            width: 90%;
+
+        }
+
+        transform: translateY(500px);
+        -webkit-transform: translateY(500px);
+        -moz-transform: translateY(500px);
+        -ms-transform: translateY(500px);
+        -o-transform: translateY(500px);
+    }
+
+
+
+
+
+
+}
+
+// uchinchi page-tugadi//
+
+// turtinchi page-boshlandi
+
+.location__title {
+    width: 1110px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 200px;
+
+    h5 {
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        /* or 100% */
+
+        letter-spacing: -2.14286px;
+
+        color: #495567;
+    }
+
+    p {
+        width: 445px;
+        height: 100px;
+        text-align: center;
+        margin-right: 200px;
+        font-family: 'Lexend Deca';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        /* or 167% */
+
+
+        color: #939CAA;
+
+    }
+
+    .btn {
+        width: 180px;
+        height: 53px;
+
+        background: #FCB72B;
+        color: #ffff;
+        border: none;
+
+        &:hover {
+            background: #ffff;
+            color: #FCB72B;
+            border: 1px solid #FCB72B;
+        }
+    }
+
+}
+
+@media only screen and (max-width:768px) {
+    .about__card {
+        width: 768px;
+
+    }
+
+    .box_card__title {
+
+        h4 {
+            margin-top: 100px;
+        }
+
+    }
+
+    .location__title {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        right: 100px;
+
+        h5 {
+            position: relative;
+            right: 100px;
+        }
+
+        .btn {
+            position: relative;
+            right: 100px;
+        }
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .about__card {
+        width: 576px;
+
+    }
+
+    .box_card__title {
+
+        h4 {
+            margin-top: 100px;
+        }
+
+    }
+
+    .location__title {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        right: 100px;
+
+        h5 {
+
+            position: relative;
+            right: 200px;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 32px;
+            /* or 100% */
+
+            text-align: center;
+            letter-spacing: -1.42857px;
+        }
+        p{
+            position: relative;
+            right: 100px;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            /* or 167% */
+
+            text-align: center;
+
+        }
+
+
+        .btn {
+
+            position: relative;
+            right: 200px;
+        }
+    }
+}
+
+// turtinchi page-boshlandi//
